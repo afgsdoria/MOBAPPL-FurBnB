@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="411dp"
+        android:layout_height="131dp"
+        android:background="#C5E2FB"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView7"
+        tools:ignore="HardcodedText"
+        android:layout_width="229dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Privacy Policy"
+        android:textColor="#3751BB"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.351"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <ImageView
+        android:id="@+id/imageButton3"
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:background="#00C4E1F9"
+        android:tint="#1D3496"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049"
+        app:srcCompat="@drawable/return_bttn"
+        tools:ignore="UseAppTint" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="353dp"
+        android:layout_height="716dp"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="20dp"
+        android:justificationMode="inter_word"
+        android:inputType="textMultiLine"
+        android:text="FurBnB complies with the standards set by the Data Privacy Act (DPA) of 2012, its Implementing Rules and Regulations, and other data privacy guidelines issued by the National Privacy Commission (NPC).\n
+    At FurBnB, we value your personal information and data privacy rights.\n
+    What are the information to be collected?\n
+    Personal information:\n
+    - Name\n
+    - E-mail\n
+    - Birth date\n
+    - Age\n
+    - Address\n
+    - Payment information\n
+    - CCTV Footage\n
+    - Event data\n
+    - User profile data\n
+    This also outlines the purposes for which we use your personal information and the measures we implement to protect the privacy of your information.\n
+    References in this Privacy Notice to “we”, “us” or “our” are references to FurBnb.\n
+    How do we use your personal information?\n
+    Customer Service Purposes\n
+    - Contacting you regarding your furbaby about any emergency and concerns\n
+    - For inquiries, requests, or complaints\n
+    - Identity verification\n
+    - Order processing\n\n
+    Legal and Security Purposes\n
+    - Pursuing or defending legal claims\n
+    - Security of the premises and the guests' and personnel's' safety"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText"
+        android:textAlignment="viewStart" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

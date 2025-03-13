@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Booking_OvernightStay"
+    tools:ignore="ExtraText">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="411dp"
+        android:layout_height="138dp"
+        android:background="#C5E2FB"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/OvernightStayText"
+        android:layout_width="333dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Overnight Stay"
+        android:textAlignment="center"
+        android:textColor="#3751BB"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/BookingOptionsText"
+        android:layout_width="333dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Booking Options"
+        android:textAlignment="center"
+        android:textColor="#3751BB"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/return_bttn"
+        android:layout_width="45dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/return_bttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dogNumText"
+        android:layout_width="162dp"
+        android:layout_height="31dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Number of Dogs"
+        android:textAlignment="textStart"
+        android:textColor="#3751BB"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.021"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/grayLessButton"
+        android:layout_width="30dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="7dp"
+        android:src="@drawable/icon_less_gray"
+        app:layout_constraintBottom_toTopOf="@+id/dogNameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toEndOf="@+id/dogNumText"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/addButton"
+        android:layout_width="30dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="7dp"
+        android:src="@drawable/icon_add"
+        app:layout_constraintBottom_toTopOf="@+id/dogNameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toEndOf="@+id/grayLessButton"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/dogNum1"
+        android:layout_width="14dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="148dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="#3751BB"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/addButton"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toEndOf="@+id/grayLessButton"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/dogNameText"
+        android:layout_width="333dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Name of Dog"
+        android:textAlignment="textStart"
+        android:textColor="#3751BB"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogNumText"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/dogName"
+        android:layout_width="381dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Dog Name"
+        android:importantForAutofill="no"
+        android:paddingStart="17dp"
+        android:paddingTop="5dp"
+        android:textColor="#3751BB"
+        android:textColorHint="#3751BB"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogNameText"
+        app:layout_constraintVertical_bias="0.025"
+        tools:ignore="HardcodedText,TextFields" />
+
+    <TextView
+        android:id="@+id/breedText"
+        android:layout_width="333dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Breed of Dog"
+        android:textAlignment="textStart"
+        android:textColor="#3751BB"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dogName"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/breed"
+        android:layout_width="381dp"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_text_design"
+        android:ems="10"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Breed"
+        android:importantForAutofill="no"
+        android:paddingStart="17dp"
+        android:paddingTop="5dp"
+        android:textColor="#3751BB"
+        android:textColorHint="#3751BB"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breedText"
+        app:layout_constraintVertical_bias="0.021"
+        tools:ignore="HardcodedText,TextFields" />
+
+    <TextView
+        android:id="@+id/sizeText"
+        android:layout_width="125dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Size of Dog"
+        android:textAlignment="textStart"
+        android:textColor="#3751BB"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breed"
+        app:layout_constraintVertical_bias="0.022"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/dogSize"
+        android:layout_width="249dp"
+        android:layout_height="53dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breed"
+        app:layout_constraintVertical_bias="0.021">
+
+        <RadioButton
+            android:id="@+id/sizeS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:buttonTint="#1D3496"
+            android:text="S"
+            android:textColor="#1D3496"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="207dp"
+            tools:layout_editor_absoluteY="368dp" />
+
+        <RadioButton
+            android:id="@+id/sizeM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:buttonTint="#1D3496"
+            android:text="M"
+            android:textColor="#1D3496"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="207dp"
+            tools:layout_editor_absoluteY="368dp" />
+
+        <RadioButton
+            android:id="@+id/sizeL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:buttonTint="#1D3496"
+            android:text="L"
+            android:textColor="#1D3496"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="207dp"
+            tools:layout_editor_absoluteY="368dp" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/selectCheckInDate"
+        android:layout_width="235dp"
+        android:layout_height="44dp"
+        android:backgroundTint="#1D3496"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Select Check-In Date"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/selectCheckOutDate"
+        android:layout_width="235dp"
+        android:layout_height="44dp"
+        android:backgroundTint="#1D3496"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Select Check-Out Date"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.612"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/selectCheckInTime"
+        android:layout_width="201dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#1D3496"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Select Check-in Time"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/selectCheckoutTime"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#1D3496"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Select Check-out Time"
+        android:textColor="#FFFFFF"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.68"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="352dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#1D3496"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingTop="9dp"
+        android:text="Send Booking Request"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.952" />
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F42727"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <RadioGroup
+        android:id="@+id/dogSize2"
+        android:layout_width="249dp"
+        android:layout_height="53dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breed"
+        app:layout_constraintVertical_bias="0.096">
+
+        <RadioButton
+            android:id="@+id/sizeS2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:buttonTint="#1D3496"
+            android:text="S"
+            android:textColor="#1D3496"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="207dp"
+            tools:layout_editor_absoluteY="368dp" />
+
+        <RadioButton
+            android:id="@+id/sizeM2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:buttonTint="#1D3496"
+            android:text="M"
+            android:textColor="#1D3496"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="207dp"
+            tools:layout_editor_absoluteY="368dp" />
+
+        <RadioButton
+            android:id="@+id/sizeL2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:buttonTint="#1D3496"
+            android:text="L"
+            android:textColor="#1D3496"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="207dp"
+            tools:layout_editor_absoluteY="368dp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

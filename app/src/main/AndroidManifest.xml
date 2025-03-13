@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Furbnb1"
+        tools:targetApi="31">
+        <activity
+            android:name=".Welcome"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Signup" />
+        <activity android:name=".HomePage" />
+        <activity android:name=".Our_rates" />
+        <activity android:name=".Our_services" />
+        <activity android:name=".Booking" />
+        <activity android:name=".Account" />
+        <activity android:name=".PastClient" />
+        <activity android:name=".FAQ" />
+        <activity android:name=".PrivacyPolicy" />
+        <activity android:name=".TermsAndCondition" />
+        <activity android:name=".AccSettings" />
+        <activity android:name=".EditAcc" />
+        <activity android:name=".Rate" />
+        <activity android:name=".Booking_OvernightStay" />
+        <activity android:name=".Booking_OvernightStay_Summary" />
+        <activity android:name=".Booking_BathAndBlow" />
+        <activity android:name=".Booking_BathAndBlow_Summary" />
+        <activity android:name=".Booking_FullGrooming" />
+        <activity android:name=".Booking_FullGrooming_Summary" />
+        <activity android:name=".Booking_DayBoarding" />
+        <activity android:name=".Booking_DayBoarding_Summary" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

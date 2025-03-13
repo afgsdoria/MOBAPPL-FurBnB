@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">furbnb1</string>
+    <string name="tandc">
+    <![CDATA[
+    These Terms and Conditions govern your use of the FurBnB online platform, which provides grooming services and hotel reservations for pets, primarily dogs. By accessing or using our Platform, you agree to these Terms.\n
+    1. Acceptance of Terms\n
+    1.1 Agreement: By using the Platform, you agree to these Terms and any other policies or guidelines we may provide.\n
+    2. Registration and Account\n
+    2.1 Account Security: You are responsible for maintaining the confidentiality of your account details. Notify us immediately of any unauthorized use.\n
+    3. Services Offered\n
+    3.1 Grooming Services: Service details and pricing are available on our Platform.\n
+    3.2 Hotel Reservations:  Details about our facilities, rates, and availability are listed on our Platform. Provide accurate information of your pet.\n
+    4. Booking and Payment\n
+    4.1 Reservations: All bookings for grooming and hotel services must be made through our Platform.\n
+    4.2 Payment:  You authorize us to charge your payment method for the services booked. All charges are non-refundable.\n
+    4.3 Cancellations: To cancel your booking, please contact us via email at furbnb@gmail.com or call us at 0900-000-0000.\n
+    5. Pet Health and Safety\n
+    5.1 Health Requirements: Inform us of any medical conditions or special needs .\n
+    5.2 Safety Precautions: We are not liable for any injuries or damages that may occur during grooming or while staying at our facilities.\n
+    6. Limitation of Liability\n
+    6.1 Disclaimer of Warranties: Our Platform and services are provided "as is" without warranties of any kind.\n
+    6.2 Limitation of Liability: To the maximum extent permitted by law, FurBnB is not liable for any indirect damages related to your use of the platform or services.\n
+    7. Intellectual Property\n
+    7.1 Ownership: All content on our Platform, including text, graphics, logos, and images, is the property of FurBnB or its licensors. You may not use or reproduce this content without our permission.\n
+    8. Governing Law\n
+    8.1 Jurisdiction: These Terms are governed by the laws of the State of Philippines.\n
+    ]]>
+    </string>
+</resources>
